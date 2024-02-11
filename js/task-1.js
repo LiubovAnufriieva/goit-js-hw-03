@@ -1,9 +1,9 @@
 function slugify(title) {
-    let newTitle = title.toLowerCase();
-     newTitle = newTitle.replace(/\s+/g, '-');
+    let newTitle = title.toLowerCase().split(" ").join("-");
     
     return newTitle;
 }
+
 
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
